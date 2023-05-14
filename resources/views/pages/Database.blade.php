@@ -1,0 +1,223 @@
+<head>
+  <link rel="stylesheet" href="./css/database.css">
+</head>
+
+<body>
+  <div id="database">
+    <div id="header">
+    	<img id="dataLogo" src="./images/nayaJeevan.png" alt="sudhar kendra logo">
+      <h1>Naya Jeevan Sudhar Kendra pra li</h1>
+      <h3 style="margin:-1vw 0;">Drug Addiction treatment and Rehabilitation Center</h3>
+      <h3>Nawalpur, Lalbandi-1, Sarlahi</h3>
+    </div>
+    
+    <div id="clientDetails">
+      <form id="clientForm" method="post" action="/submit-form" enctype="multipart/form-data">
+      	<img id="backG" src="./images/image.png" alt="background image">
+
+        <fieldset>
+        	<h3>Client Form</h3>
+        	
+        	<field>
+          	<label for="uniqueId">Unique id:</label>
+          	<input type="text" value="" name="id" id="uniqueId"><br>
+          </field>
+        	
+        	<field>
+          	<label for="name">Name:</label>
+          	<input type="text" name="name" id="name" required><br>
+          </field>
+          
+          <field>
+          	<label for="image">Image:</label>
+          	<input type="file" name="image" id="image">
+          </field>
+
+        	<field>
+          	<label for="admission">Admission:</label>
+          	<input type="date" name="admission" id="admission" ><br>
+          </field>
+          
+          <field>
+          	<label for="education">Education qualification:</label>
+          	<input type="text" name="education" id="education"><br>
+          </field>
+          
+          <field>
+          	<label for="proffession">Profession:</label>
+          	<input type="text" name="profession" id="profession"><br>
+          </field>
+          
+          <field>
+          	<label for="father">Father's name:</label>
+          	<input type="text" name="father" id="father"><br>
+          </field>
+          
+          <field>
+          	<label for="mother">Mother's name:</label>
+          	<input type="text" name="mother" id="mother"><br>
+          </field>
+          
+          <field>
+          	<label for="spouse">Spouse's name:</label>
+          	<input type="text" name="spouse" id="spouse"><br>
+          </field>
+          
+          <field>
+          	<label for="address">Full Address:</label>
+          	<input type="text" name="address" id="address"><br>
+          </field>
+          
+          <field>
+          	<label for="contact1">Contact 1:</label>
+          	<input type="number" name="contact1" id="contact1"><br>
+          </field>
+          
+          <field>
+          	<label for="contact2">Contact 2:</label>
+          	<input type="number" name="contact2" id="contact2"><br>
+          </field>
+          
+          <field>
+          	<label for="years">No. of years addicted:</label>
+          	<input type="number" name="years" id="years"><br>
+          </field>
+          
+          <field>
+          	<label for="dob">Date of Birth:</label>
+          	<input type="date" name="dob" id="dob" ><br>
+          </field>
+        </fieldset>
+        
+        <fieldset>
+          <span>Maritial Status:</span>
+          <field>
+          	<label for="Single">Single</label>
+          	<input type="radio" id="Single" name="maritial" value="Single">          
+          </field>
+          <field>
+          	<label for="Married">Married</label>
+          	<input type="radio" id="Married" name="maritial" value="Married">
+          </field>
+          <field>
+          	<label for="Divorced">Divorced</label>
+          	<input type="radio" id="Divorced" name="maritial" value="Divorced">
+          </field>
+        </fieldset>
+          
+        <fieldset>
+        	<span>Abused Substances:</span>
+        	<field>
+          	<label for="Alcohol">Alcohol</label>
+          	<input type="checkbox" id="Alcohol" name="substances" value="Alcohol">
+          </field>
+          <field>
+          	<label for="Cannabis">Cannabis</label>
+          	<input type="checkbox" id="Cannabis" name="substances" value="Cannabis">
+          </field>
+          <field>
+          	<label for="CoughSyrup">Cough Syrup</label>
+          	<input type="checkbox" id="CoughSyrup" name="substances" value="CoughSyrup">
+          </field>
+          <field>
+          	<label for="Rakshi">Cigarette</label>
+          	<input type="checkbox" id="Cigarette" name="substances" value="Cigarette">
+          </field>
+          <field>
+          	<label for="Women">Women & Porn</label>
+          	<input type="checkbox" id="Women" name="substances" value="Women">
+          </field>
+          <field>
+          	<label for="Tablets">Tablets</label>
+          	<input type="checkbox" id="Tablets" name="substances" value="Tablets">
+          </field>
+          <field>
+          	<label for="VideoGames">Video Games</label>
+          	<input type="checkbox" id="VideoGames" name="substances" value="Video Games">
+          </field>
+          <field>
+          	<label for="Behavioural">Behavioural</label>
+          	<input type="checkbox" id="Behavioural" name="substances" value="Behavioural">
+          </field>
+        </fieldset>
+        
+        
+        <fieldset>
+        	<span>Type of admission:</span>
+        	<field>
+          	<label for="Surrender">Self/Surrender</label>
+          	<input type="radio" id="Surrender" name="admittedBy" value="Surrender">
+          </field>
+          
+          <field>
+          	<label for="Family">Forcefully by Family</label>
+          	<input type="radio" id="Family" name="admittedBy" value="Family">
+          </field>
+          
+          <field>
+          	<label for="Government">Government Authority</label>
+          	<input type="radio" id="Government" name="admittedBy" value="Government">
+          </field>
+          
+          <field>
+          	<label for="Other">Other</label>
+          	<input type="radio" id="Other" name="admittedBy" value="Other">
+          </field>
+        </fieldset>
+        
+        
+        <fieldset>
+        	<span>State of Health at enrollment:</span>
+        	<field>
+          	<label for="Good">Good</label>
+          	<input type="radio" id="Good" name="health" value="Good">
+          </field>
+          
+          <field>
+          	<label for="Okay">Okay</label>
+          	<input type="radio" id="Okay" name="health" value="Okay">
+          </field>
+          
+          <field>
+          	<label for="Weak">Weak</label>
+          	<input type="radio" id="Weak" name="health" value="Weak">
+          </field>
+          
+          <field>
+          	<label for="VeryWeak">Very Weak</label>
+          	<input type="radio" id="VeryWeak" name="health" value="VeryWeak">
+          </field>
+        </fieldset>
+        
+        <fieldset>
+        	<field>
+          	<label for="diseases">Diseases or any pre-conditons if any:</label>
+          	<input type="text" name="diseases" id="diseases"><br>
+          </field>
+          
+          <field>
+          	<label for="Weight">Weight:</label>
+          	<input type="number" name="weight" id="Weight"><br>
+          </field>
+          
+          <field>
+          	<label for="medication">If needs any medication:</label>
+          	<input type="text" name="medication" id="medication"><br>
+          </field>
+        </fieldset>
+        
+     		<button id="save" value="Submit" type="submit">Save</button>
+    		  <span id="refresh">Refresh</span>
+      </form> <!--form -->
+    </div>	<!-- id=clientDetails -->
+    
+    <div id="dataAllTables">
+    	<h1>Clients Details</h1>
+    		<!-- -->
+    </div>
+    
+  </div>		<!-- id=database -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../js/database.js"></script>
+</body>
+
